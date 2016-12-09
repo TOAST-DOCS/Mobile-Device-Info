@@ -13,7 +13,7 @@
 
 ### 디바이스 조회 
 
-### 요청
+#### 요청
 
 [URL]
 
@@ -37,7 +37,7 @@
 |pageNum|	String|	X|	페이지 번호(default=1)|
 |pageSize|	String|	X|	페이지당 노출할 디바이스 정보 수(default=15)|
 
-[주의] sort : 정렬 옵션
+[참고] sort : 정렬 옵션
 정렬 필드와 정렬기준(오름/내림차순)을 입력합니다.  
  - 정렬 필드 
     - 여러 개의 필드를 기준으로 정렬할 경우 Comma(,)로 구분하여 입력합니다.  
@@ -46,19 +46,20 @@
     - 내림차순으로 정렬할 경우 필드이름 앞에 '-'를 추가합니다.
 
 
-정렬 필드 정보 
-| 필드 이름 | 필드 설명 |
+##### 정렬 필드 정보 
+
+|필드 이름|필드 설명|
 |---|---|
-|deviceModelCode| 디바이스 모델 코드 |
-|deviceModelName| 디바이스 모델명 |
-|deviceModelDetailName| 디바이스 상세 모델명 |
+|deviceModelCode|디바이스 모델 코드|
+|deviceModelName|디바이스 모델명|
+|deviceModelDetailName|디바이스 상세 모델명|
 |deviceSeries|디바이스 시리즈|
 |osVersion|OS Vers.|
 |launchYear| 출시년도|
-|manufactureCompany| 제조사 |
-|telecom| 통신사 |
-|launchCountryCode| 제조국가|
-|gearTypeCode|장비타입 |
+|manufactureCompany|제조사|
+|telecom|통신사|
+|launchCountryCode|제조국가|
+|gearTypeCode|장비타입|
 
 #### 응답
 

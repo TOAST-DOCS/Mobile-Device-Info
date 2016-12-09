@@ -11,10 +11,4 @@ Console에 접속하여 Mobile Device Info 상품을 활성화 시킵니다.
 ### 디바이스 조회 
 
 디바이스 모델코드, 모델명으로 조회를 합니다. 
-
-![](http://static.toastoven.net/prod_email/img_02.png)
-
 디바이스 리스트의 헤더 컬럼을 클릭하여 정렬을 할 수 있습니다.  
-
-![](http://static.toastoven.net/prod_email/img_03.png)
-
