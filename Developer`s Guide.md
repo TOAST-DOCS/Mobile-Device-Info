@@ -9,7 +9,7 @@
 
 |환경|	도메인|
 |---|---|
-|Real|	https://api-mail.cloud.toast.com|
+|Real|	http://api-mobiledevice.cloud.toast.com|
 
 ### 디바이스 조회 
 
@@ -34,8 +34,8 @@
 |deviceModelCode|	String|	X|	디바이스 모델 코드|
 |deviceModelName|	String|	X|	디바이스 모델명|
 |sort|	String|	X|	정렬옵션|
-|pageNum|	String|	X|	페이지 번호(default=1)|
-|pageSize|	String|	X|	페이지당 노출할 디바이스 정보 수(default=15)|
+|pageNum|	Integer|	X|	페이지 번호(default=1)|
+|pageSize|	Integer|	X|	페이지당 노출할 디바이스 정보 수(default=15)|
 
 [참고] sort : 정렬 옵션
 정렬 필드와 정렬기준(오름/내림차순)을 입력합니다.  
