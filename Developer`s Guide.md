@@ -3,7 +3,7 @@
 > ※ 본 문서는 alpha 개발 단계의 문서입니다.
 > 사용에 관심이 있으신 분은 **support@cloud.toast.com**으로 문의해 주시기 바랍니다.
 
-## 조회 
+## 조회
 
 [API 도메인]
 
@@ -11,7 +11,7 @@
 |---|---|
 |Real|	http://api-mobiledevice.cloud.toast.com|
 
-### 디바이스 조회 
+### 디바이스 조회
 
 #### 요청
 
@@ -42,7 +42,7 @@
  - 정렬 필드 : 여러 개의 필드를 기준으로 정렬할 경우 Comma(,)로 구분하여 입력합니다.  
  - 정렬 기준 : 오름차순으로 정렬할 경우 필드이름을 입력합니다. 내림차순으로 정렬할 경우 필드이름 앞에 '-'를 추가합니다.
 
-##### 정렬 필드 정보 
+##### 정렬 필드 정보
 
 |필드 이름|필드 설명|
 |---|---|
@@ -64,7 +64,7 @@
    "header":{  
       "isSuccessful":Boolean,
       "resultCode":Integer,
-      "resultMessage":String 
+      "resultMessage":String
    },
    "body":{  
       "pageNum":Integer,
@@ -106,4 +106,3 @@
 |-- telecom|  String| 통신사 |
 |-- launchCountryCode| String| 출시국가|
 |-- gearTypeCode|  String| 장비타입 |
-
