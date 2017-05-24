@@ -41,6 +41,7 @@
 정렬 필드와 정렬기준(오름/내림차순)을 입력합니다.  
  - 정렬 필드 : 여러 개의 필드를 기준으로 정렬할 경우 Comma(,)로 구분하여 입력합니다.  
  - 정렬 기준 : 오름차순으로 정렬할 경우 필드이름을 입력합니다. 내림차순으로 정렬할 경우 필드이름 앞에 '-'를 추가합니다.
+<br>
 
 ##### 정렬 필드 정보
 
@@ -48,14 +49,11 @@
 |---|---|
 |deviceModelCode|디바이스 모델 코드|
 |deviceModelName|디바이스 모델명|
-|deviceModelDetailName|디바이스 상세 모델명|
-|deviceSeries|디바이스 시리즈|
-|osVersion|OS Vers.|
+|osCode| OS 정보|
 |launchYear| 출시년도|
 |manufactureCompany|제조사|
 |telecom|통신사|
-|launchCountryCode|제조국가|
-|gearTypeCode|장비타입|
+|gearTypeName|장비 유형|
 
 #### 응답
 
@@ -73,15 +71,12 @@
       "data":[  
          {  
             "deviceModelCode":String,
+            "osCode":String,
             "deviceModelName":String,
-            "deviceModelDetailName":String,
-            "deviceSeries":String,
-            "osVersion":String,
             "launchYear":String,
             "manufactureCompany":String,
             "telecom":String,
-            "launchCountryCode":String,
-            "gearTypeCode":String
+            "gearTypeName":String
          }
       ]
    }
@@ -97,12 +92,9 @@
 |body|	Object|	본문 영역|
 |- data|	List |	데이터 영역|
 |-- deviceModelCode|	String|	디바이스 모델코드 |
+|-- osCode| String| OS 정보|
 |-- deviceModelName|	String|	디바이스 모델명 |
-|-- deviceModelDetailName|  String| 디바이스 상세 모델명 |
-|-- deviceSeries|  String| 디바이스 시리즈 |
-|-- osVersion| String| OS Version|
 |-- launchYear|  String| 출시년도 |
 |-- manufactureCompany| String| 제조사 |
 |-- telecom|  String| 통신사 |
-|-- launchCountryCode| String| 출시국가|
-|-- gearTypeCode|  String| 장비타입 |
+|-- gearTypeName|  String| 장비 유형 |
