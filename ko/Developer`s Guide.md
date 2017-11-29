@@ -55,6 +55,31 @@
 |telecom|통신사|
 |gearTypeName|장비 유형|
 
+
+##### Sample Request 
+
+디바이스 모델  코드가 SM-G035P 인 디바이스 조회 
+```
+GET http://api-mobiledevice.cloud.toast.com/mobiledevice/v1.0/appKeys/TEST/device?deviceModelCode=SM-G935P
+```
+
+디바이스 모델 이름에 Galaxy가 포함된 디바이스 조회 
+
+```
+GET http://api-mobiledevice.cloud.toast.com/mobiledevice/v1.0/appKeys/{appKey}/device?deviceModelName=Galaxy
+```
+
+디바이스 모델 이름에 Galaxy가 포함된 디바이스 조회 - 출시년도(launchYear) 내림차순 정렬 
+```
+GET http://api-mobiledevice.cloud.toast.com/mobiledevice/v1.0/appKeys/{appKey}/device?deviceModelName=Galaxy&sort=-launchYear
+```
+
+디바이스 모델 이름에 Galaxy가 포함된 디바이스 조회 - telecom 오름차순 정렬 후, 출시년도(launchYear) 내림차순 정렬
+```
+GET http://api-mobiledevice.cloud.toast.com/mobiledevice/v1.0/appKeys/{appKey}/device?deviceModelName=Galaxy&sort=telecom,-launchYear
+```
+
+
 #### 응답
 
 ```
