@@ -11,7 +11,7 @@
 | -5000 | PRODUCT_PARAMETER_EXCEPTION | Invalid parameter |
 | -5001 | PRODUCT_ALREADY_ACTIVATED_APPKEY | Already activated appkey. |
 | -5002 | PRODUCT_NOT_ACTIVATED_APPKEY | Not activated appkey. |
-| -5002 | PRODUCT_NOT_EXIST | Not exist appkey. |
+| -5003 | PRODUCT_NOT_EXIST | Not exist appkey. |
 | -9997 | INTERNAL_PARSINGERROR_SYSTEM | Invalid API parameters. |
 | -9998 | INTERNAL_NOTFOUND_SYSTEM | Not exist API. |
 | -9999 | INTERNAL_SYSTEMERROR_SYSTEM | Internal error. |
