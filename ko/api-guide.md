@@ -7,7 +7,7 @@ Mobile Device Info 서비스를 사용하는 데 필요한 API를 설명합니�
 ### 사전 준비
 
 * API 사용을 위해서는 앱 키가 필요합니다.
-* 앱 키는 상단 "URL & Appkey" 메뉴에서 확인이 가능합니다.
+* 앱 키는 상단 "URL & Appkey" 메뉴에서 확인 가능합니다.
 
 ### 요청 공통 정보
 
@@ -18,7 +18,8 @@ Mobile Device Info 서비스를 사용하는 데 필요한 API를 설명합니�
 |리얼|	http://api-mobiledevice.cloud.toast.com|
 
 [Path 파라미터]
-* 모든 API는 앱 키를 path 파라미터에 지정하도록 되어 있습니다.
+
+* 모든 API는 앱 키를 path 파라미터에 지정해야 합니다.
 
 |이름|	설명|
 |---|---|
@@ -29,7 +30,7 @@ Mobile Device Info 서비스를 사용하는 데 필요한 API를 설명합니�
 * 모든 API 요청에 대해서 200 OK로 응답합니다. 자세한 응답 결과는 응답 본문의 헤더를 참고합니다.
 
 [성공 응답 본문]
-```
+```json
 {
     "header": {
         "isSuccessful": true,
@@ -40,7 +41,7 @@ Mobile Device Info 서비스를 사용하는 데 필요한 API를 설명합니�
 ```
 
 [실패 응답 본문]
-```
+```json
 {
     "header": {
         "isSuccessful": false,
@@ -64,6 +65,7 @@ Mobile Device Info 서비스를 사용하는 데 필요한 API를 설명합니�
 |---|---|
 |GET|	/mobiledevice/v1.0/appKeys/{appKey}/device|
 
+
 [필드]
 
 |이름|	타입|	필수 여부|	기본값|	유효 범위| 설명|
@@ -73,6 +75,7 @@ Mobile Device Info 서비스를 사용하는 데 필요한 API를 설명합니�
 |sort           |	String |	선택|   | |	정렬 옵션|
 |pageNum        |	Integer|	선택|	 1|	|	페이지 번호|
 |pageSize       |	Integer|	선택|	15|	|	페이지당 노출할 정보 수|
+
 
 [정렬 옵션 필드 상세정보]
 
@@ -94,30 +97,30 @@ Mobile Device Info 서비스를 사용하는 데 필요한 API를 설명합니�
 [요청 샘플]
 
 * 디바이스 모델 코드가 SM-G035P인 디바이스 검색
-```
-GET http://api-mobiledevice.cloud.toast.com/mobiledevice/v1.0/appKeys/TEST/device?deviceModelCode=SM-G935P
-```
+    ```
+    GET http://api-mobiledevice.cloud.toast.com/mobiledevice/v1.0/appKeys/TEST/device?deviceModelCode=SM-G935P
+    ```
 
 * 디바이스 모델 이름에 Galaxy가 포함된 디바이스 검색
-```
-GET http://api-mobiledevice.cloud.toast.com/mobiledevice/v1.0/appKeys/{appKey}/device?deviceModelName=Galaxy
-```
+    ```
+    GET http://api-mobiledevice.cloud.toast.com/mobiledevice/v1.0/appKeys/{appKey}/device?deviceModelName=Galaxy
+    ```
 
 * 디바이스 모델 이름에 Galaxy가 포함된 디바이스 검색 - 출시연도(launchYear) 내림차순 정렬
-```
-GET http://api-mobiledevice.cloud.toast.com/mobiledevice/v1.0/appKeys/{appKey}/device?deviceModelName=Galaxy&sort=-launchYear
-```
+    ```
+    GET http://api-mobiledevice.cloud.toast.com/mobiledevice/v1.0/appKeys/{appKey}/device?deviceModelName=Galaxy&sort=-launchYear
+    ```
 
 * 디바이스 모델 이름에 Galaxy가 포함된 디바이스 검색 - 통신사(telecom) 필드 오름차순 정렬 후, 출시연도(launchYear) 필드 내림차순 정렬
-```
-GET http://api-mobiledevice.cloud.toast.com/mobiledevice/v1.0/appKeys/{appKey}/device?deviceModelName=Galaxy&sort=telecom,-launchYear
-```
+    ```
+    GET http://api-mobiledevice.cloud.toast.com/mobiledevice/v1.0/appKeys/{appKey}/device?deviceModelName=Galaxy&sort=telecom,-launchYear
+    ```
 
 
 #### 응답
 
 [응답 본문]
-```
+```json
 {  
    "header":{  
       "isSuccessful":Boolean,
