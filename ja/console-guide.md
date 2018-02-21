@@ -1,7 +1,5 @@
 ## Mobile Service > Mobile Device Info > Console Guide
 
-> ※ 본 문서는 alpha 개발 단계의 문서입니다.
-> 사용에 관심이 있으신 분은 **support@cloud.toast.com**으로 문의해 주시기 바랍니다.
 
 Mobile Device Info 서비스를 사용하려면 콘솔에 로그인하고 프로젝트를 선택한 후 서비스를 활성화해야 합니다. 서비스가 활성화되면 디바이스를 검색할 수 있습니다.
 
