@@ -1,5 +1,11 @@
 ## Mobile Service > Mobile Device Info > Release Notes
 
+### 2018.04.24
+#### 기능 변경 
+* [Console] 디바이스 정보가 없는 필드값이 빈 공백문자로 표시됩니다. 
+* [Console] 디바이스 정보의 필드명을 통용어로 변경하였습니다. 
+* [API] 디바이스 정보가 없는 필드값이 'known' 에서 null로 전달되도록 변경하였습니다. 
+
 ### 2017.05.25
 #### 기능 변경
 
